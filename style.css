@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'DePixel';
+  src: url('Assets/depixelklein.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+}
+
+#map {
+  width: 800px;
+  height: 800px;
+  position: relative;
+  background-image: url("./Assets/background-map-traps.png");
+  background-size: contain;
+}
+
+#score {
+  width: 800px;
+  height: 70px;
+  background-color: rgb(89, 118, 109);
+  background-image: url("./Assets/marcador2.png");
+  position: relative;
+  background-size: contain;
+  margin: auto;
+  font-size: 50px;
+  font-family:"DePixel";
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  position: relative;
+}
+
+#player {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  transition: all 0.1s ease;
+  background-size: contain;
+  z-index: 1;
+}
+
+.back {
+  background-image: url(./Assets/Santa/backgif.gif);
+}
+
+.front {
+  background-image: url(./Assets/Santa/frontgif.gif);
+}
+
+.left {
+  background-image: url(./Assets/Santa/leftgif.gif);
+}
+
+.right {
+  background-image: url(./Assets/Santa/rightgif.gif);
+}
+
+.dead {
+  background-image: url(./Assets/Santa/dead.png);
+}
+
+.snowman {
+  background-image: url(./Assets/snowman.gif);
+}
+
+.trapx {
+  width: 40px;
+  height: 20px;
+  position: absolute;
+}
+
+.trapy {
+  width: 20px;
+  height: 40px;
+  position: absolute;
+}
+
+
+.snowball {
+  background-image: url("./Assets/boladenieve.gif");
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background-size: contain;
+}
+.restart-button{
+  height: 35px;
+  width: 142px;
+  margin-top: 380px;
+  background-image: url("./Assets/boton\ tryagain.jpg");
+  position: absolute;
+  z-index: 3;
+}
+
+.start-button{
+  height: 35px;
+  width: 142px;
+  margin-top: 380px;
+  background-image: url("./Assets/boton\ empezar.jpg");
+  position: absolute;
+  z-index: 2;
+}
+
+.newgame{
+  height: 220px;
+  width: 475px;
+  margin-top: 240px;
+  background-image: url("./Assets/pantalla\ de\ inicio.jpg");
+  position: absolute;
+  z-index: 2;
+
+}
+
+.gameover{
+  height: 220px;
+  width: 475px;
+  margin-top: 240px;
+  background-image: url("./Assets/pantalla\ de\ gameover.jpg");
+  position: absolute;
+  z-index: 3;
+}
+
+.hide {
+  display: none;
+}
+
+#hide {
+  display: none;
+}
+
+.score-number {
+flex: 1;
+text-align: center;
+}
+
+.livesSpace{
+  /* margin-left: 200px; */
+  height: 40px;
+  width: 140px;
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.lives{
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+  margin-left: 120px;
+  position: absolute;
+  background-image: url("./Assets/heart.png");
+}
+
+.holes{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  background-image: url("./Assets/fire.gif");
+  background-position:center;
+  background-size: cover;
+}
